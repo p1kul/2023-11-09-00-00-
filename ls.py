@@ -6,7 +6,7 @@ class Figure():
 
     def __init__(self, color, *sides):
         self.__sides = []
-        self.__color = [None,None,None]
+        self.__color = []
         self.filled = False
         if self.sides_count == len(sides) and self.__is_valid_sides(*sides) == True:
             self.set_sides(*sides)
